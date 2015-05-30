@@ -1,6 +1,12 @@
 body {
     font-family: 'brauerneue', Times;
 }
+
+h1, h2 {
+    font-weight: normal;
+}
+
+/* page header */
 body > header h1 {
     height: 90px;
     width: 1000px;
@@ -35,3 +41,58 @@ body > header nav {
         height: 47%;
         vertical-align: middle;
     }
+
+
+/* main content header */
+main {
+    width: 1000px;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+
+    main header {
+        display: table;
+        width: 100%;
+    }
+
+    main header div {
+        display: table-cell;
+    }
+
+        main header div h1 {
+            font-size: 37px;
+            margin-bottom: 15px;
+        }
+
+        main header div h2 {
+            font-size: 18px;
+            color: #888;
+        }
+
+    main header aside {
+        display: table-cell;
+        width: 105px;
+        border-left: 1px solid #e5e5e5;
+        padding-left: 30px;
+        vertical-align: middle;
+    }
+
+        main header aside h1 {
+            font-size: 18px;
+            color: #888;
+        }
+
+        main header aside hr {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            height: 0px;
+            width: 40px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        main header aside p {
+            font-size: 37px;
+            color: #f60000;
+        }
+
+
