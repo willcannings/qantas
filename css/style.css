@@ -114,6 +114,11 @@ section {
     margin-bottom: 35px;
     position: relative;
 }
+
+section.day {
+    border-top: 3px double black;
+    margin-bottom: 50px;
+}
     
     /* section heading ("SYD Airport", "Bangkok" etc) */
     section > h1 {
@@ -140,6 +145,26 @@ section {
     section > h1#prepare {
         color: #f60000;
     }
+
+    section.day > h1 {
+        left: -12px;
+    }
+
+        section.day > h1 > span {
+            box-sizing: border-box;
+            display: inline-block;
+            border-radius: 23px;
+            width: 23px;
+            height: 23px;
+            line-height: 21px;
+            padding-top: 0px;
+            font-size: 14px;
+            text-align: center;
+            border: 2px solid black;
+            margin-right: 5px;
+            position: relative;
+            top: -1px;
+        }
 
     section > aside {
         font-size: 13px;
