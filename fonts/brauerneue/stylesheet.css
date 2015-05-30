@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'brauerneue';
+    src: url('BrNStd.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brauerneue';
+    src: url('BrNStdBd.otf');
+    font-weight: bold;
+    font-style: normal;
+}
