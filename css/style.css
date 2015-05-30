@@ -1,0 +1,34 @@
+body > header h1 {
+    height: 90px;
+    width: 1000px;
+    line-height: 90px;
+    vertical-align: middle;
+    margin: 0px auto;
+}
+
+    body > header h1 img {
+        vertical-align: middle;
+    }
+
+    body > header h1 #stuff {
+        float: right;
+        height: 50%;
+        position: relative;
+        top: 22px;
+    }
+
+body > header nav {
+    background-image: url(../images/header-bg.png);
+}
+
+    body > header nav div {
+        width: 1000px;
+        height: 70px;
+        margin: 0px auto;
+        line-height: 70px;
+    }
+
+    body > header nav img {
+        height: 47%;
+        vertical-align: middle;
+    }

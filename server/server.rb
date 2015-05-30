@@ -110,7 +110,7 @@ class User
             avgs[name] = sum / counts[name]
         end
 
-        sums.keys.sort_by {|name| avgs[name]}.reverse
+        sums.keys.sort_by {|name| counts[name]}.reverse
     end
 end
 
