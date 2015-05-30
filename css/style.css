@@ -12,6 +12,15 @@ p {
     color: #444;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* page header */
 body > header h1 {
     height: 90px;
@@ -154,6 +163,10 @@ section.day {
         left: -12px;
     }
 
+    section.day > h1 + article {
+        margin-top: 30px;
+    }
+
         section.day > h1 > span {
             box-sizing: border-box;
             display: inline-block;
@@ -203,6 +216,10 @@ section.day {
             background-image: url(../images/chevron-down.png);
         }
 
+        section article.force-open {
+            background-image: none !important;
+        }
+
         section article > div {
             box-sizing: border-box;
             overflow: hidden;
@@ -229,10 +246,14 @@ section.day {
                 padding-left: 20px;
                 vertical-align: middle;
                 cursor: pointer;
+                color: black;
+            }
+
+            section article.force-open > h1 {
+                cursor: default !important;
             }
 
             section.tasks article > h1 {
-                color: black;
                 padding-left: 0px;
             }
 
@@ -243,12 +264,17 @@ section.day {
                     background-color: white;
                     border-right: 1px solid #ebebeb;
                     margin-right: 20px;
-                    border-top-left-radius: 3px;
-                    border-bottom-left-radius: 3px;
+                    border-bottom-left-radius: 0px;
                     vertical-align: middle;
                     position: relative;
                     top: -1px;
                     cursor: pointer;
+                    border-top-left-radius: 3px;
+                    -webkit-transition: border-bottom-left-radius 0.6s;
+                }
+
+                section.tasks article.closed > h1 div {
+                    border-bottom-left-radius: 3px;
                 }
 
                 section.tasks article > h1 div.complete {
@@ -258,6 +284,27 @@ section.day {
                     background-size: 19px 18px;
                 }
 
+        section article div.transfers {
+            display: table;
+            width: 100%;
+        }
+
+            section article div.transfers div {
+                display: table-cell;
+            }
+
+            section article div.transfers div:last-child {
+                vertical-align: top;
+                border-left: 1px solid #ebebeb;
+                color: #f60000;
+                width: 120px;
+                font-size: 15px;
+                line-height: 22px;
+                padding-right: 30px;
+                padding-left: 15px;
+            }
+
         img.hero {
             width: 806px;
+            margin-bottom: 10px;
         }

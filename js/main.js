@@ -11,6 +11,7 @@ $(function() {
     });
 
     $('.tasks article h1').click(function(event) {
-        $(this).parent().toggleClass('closed');
+        if (!$(this).hasClass('force-open'))
+            $(this).parent().toggleClass('closed');
     });
 });
