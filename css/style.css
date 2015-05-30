@@ -59,7 +59,7 @@ main {
     main > header {
         display: table;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
     }
 
     main > header div {
@@ -125,7 +125,7 @@ section {
         top: -13px;
         font-size: 17px;
         display: inline-block;
-        padding-right: 8px;
+        padding-right: 12px;
         background-color: white;
     }
 
@@ -139,6 +139,17 @@ section {
 
     section > h1#prepare {
         color: #f60000;
+    }
+
+    section > aside {
+        font-size: 13px;
+        color: #bbb;
+        letter-spacing: 0.5px;
+        position: absolute;
+        left: 22px;
+        top: 16px;
+        width: 120px;
+        line-height: 18px;
     }
 
     /* content in right column */
@@ -166,15 +177,14 @@ section {
         section article > div {
             box-sizing: border-box;
             overflow: hidden;
-            -webkit-transition: max-height 0.6s ease-in;
-            max-height: 200px;
+            -webkit-transition: height 0.6s;
             background-color: white;
             border-bottom-left-radius: 3px;
             border-bottom-right-radius: 3px;
         }
 
         section article.closed > div {
-            max-height: 0px;
+            height: 0px !important;
         }
 
             section article > div > div {
@@ -189,6 +199,7 @@ section {
                 line-height: 43px;
                 padding-left: 20px;
                 vertical-align: middle;
+                cursor: pointer;
             }
 
             section.tasks article > h1 {
