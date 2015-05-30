@@ -115,6 +115,10 @@ section {
     position: relative;
 }
 
+section#prepare {
+    margin-bottom: 60px;
+}
+
 section.day {
     border-top: 3px double black;
     margin-bottom: 50px;
@@ -142,7 +146,7 @@ section.day {
             height: 23px;
         }
 
-    section > h1#prepare {
+    section#prepare > h1 {
         color: #f60000;
     }
 
