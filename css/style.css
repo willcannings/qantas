@@ -347,6 +347,41 @@ section.day {
                     padding: 6px 0px;
                 }
 
+            section h1.suggestions {
+                text-align: center;
+                color: #999;
+                margin-top: 20px;
+            }
+
+            section article.activities {
+                margin-top: 20px;
+            }
+
+            section article.activities.closed {
+                height: 0px !important;
+            }
+
+            section article.activities div.options div {
+                padding-bottom: 38px;
+            }
+
+            section article.activities div.options div.muay {
+                display: none;
+            }
+
+            section article.activities.muay div.options div.muay {
+                display: table-cell;
+            }
+
+            section article.activities.muay div.options div.normal {
+                display: none;
+            }
+
+            section article.activities div.options div a {
+                position: absolute;
+                bottom: 15px;
+            }
+
         img.hero {
             width: 806px;
             margin-bottom: 10px;
