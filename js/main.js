@@ -2,7 +2,8 @@ $(function() {
     $('section article > div > div').each(function(i, el) {
         var el = $(el);
         var height = el.height() + 30;
-        el.parent().css({height: height + 'px'});
+        if (!$(this).parent().parent().hasClass('force-open'))
+            el.parent().css({height: height + 'px'});
     });
 
     $('.tasks article h1 div').click(function(event) {
@@ -14,4 +15,12 @@ $(function() {
         if (!$(this).hasClass('force-open'))
             $(this).parent().toggleClass('closed');
     });
+
+    $('.options.hotels a').click(function(event) {
+        event.preventDefault();
+        $('.hotel-name').text($(this).data('name'));
+        $('.drive-time').text('50 mins');
+        $('.options.hotels > div').addClass('lighter')
+        $(this).parent().removeClass('lighter');
+    })
 });

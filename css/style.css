@@ -218,7 +218,18 @@ section.day {
 
         section article.force-open {
             background-image: none !important;
+            height: auto;
         }
+
+        section article.outline {
+            border: 1px dashed #ebebeb;
+            background-image: none !important;
+            background-color: white;
+        }
+
+            section article.outline h1 {
+                color: #999;
+            }
 
         section article > div {
             box-sizing: border-box;
@@ -284,13 +295,14 @@ section.day {
                     background-size: 19px 18px;
                 }
 
-        section article div.transfers {
+        section article div.transfers, section article div.options {
             display: table;
             width: 100%;
         }
 
-            section article div.transfers div {
+            section article div.transfers div, section article div.options div {
                 display: table-cell;
+                vertical-align: top;
             }
 
             section article div.transfers div:last-child {
@@ -303,6 +315,37 @@ section.day {
                 padding-right: 30px;
                 padding-left: 15px;
             }
+
+            section article div.options div {
+                width: 240px;
+            }
+
+            section article div.options div.lighter {
+                opacity: 0.5;
+            }
+
+                section article div.options div img {
+                    width: 240px;
+                    margin-bottom: 10px;
+                }
+
+                section article div.options div h1 {
+                    margin-bottom: 4px;
+                }
+
+                section article div.options div h2 {
+                    color: #f60000;
+                }
+
+                section article div.options div a {
+                    display: block;
+                    text-align: center;
+                    color: white;
+                    background-color: #f60000;
+                    width: 240px;
+                    margin-top: 10px;
+                    padding: 6px 0px;
+                }
 
         img.hero {
             width: 806px;
