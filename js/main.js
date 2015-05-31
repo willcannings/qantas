@@ -22,5 +22,10 @@ $(function() {
         $('.drive-time').text('50 mins');
         $('.options.hotels > div').addClass('lighter')
         $(this).parent().removeClass('lighter');
+    });
+
+    $('#open-acts').click(function(event) {
+        event.preventDefault();
+        $('#actual-acts').removeClass('closed');
     })
 });
