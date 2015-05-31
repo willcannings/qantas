@@ -115,6 +115,7 @@ main {
 /* main content */
 #timeline {
     border-left: 1px dashed black;
+    margin-bottom: 70px;
 }
 
 section {
@@ -123,6 +124,19 @@ section {
     margin-bottom: 35px;
     position: relative;
 }
+
+section#last {
+    border-top: none;
+}
+
+    section#last h1 {
+        background-color: transparent;
+    }
+
+    section#last h1 img {
+        top: -20px;
+        left: -3px;
+    }
 
 section#prepare {
     margin-bottom: 60px;
@@ -398,3 +412,29 @@ section.day {
             width: 806px;
             margin-bottom: 10px;
         }
+
+
+footer {
+    background-image: url(../images/footer-bg.png);
+    height: 230px;
+    line-height: 230px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+    footer img {
+        height: 167px;
+        vertical-align: middle
+    }
+
+#footer2 {
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+
+    #footer2 img {
+        vertical-align: middle;
+        height: 41px;
+    }

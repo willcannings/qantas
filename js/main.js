@@ -36,4 +36,10 @@ $(function() {
         $('#actual-acts').addClass('muay');
         sessionStorage.setItem('muay', false);
     }
+
+    $('.options.activities a').click(function(event) {
+        event.preventDefault();
+        $('.options.activities > div').addClass('lighter')
+        $(this).parent().removeClass('lighter');
+    });
 });
