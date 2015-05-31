@@ -27,5 +27,13 @@ $(function() {
     $('#open-acts').click(function(event) {
         event.preventDefault();
         $('#actual-acts').removeClass('closed');
-    })
+    });
+
+    var muay = sessionStorage.getItem('muay');
+    if (muay == 'false' || muay == null) {
+        sessionStorage.setItem('muay', true);
+    } else {
+        $('#actual-acts').addClass('muay');
+        sessionStorage.setItem('muay', false);
+    }
 });
